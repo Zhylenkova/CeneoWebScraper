@@ -1,0 +1,52 @@
+{%extends 'base.html.jinja'%}
+{%block content%}
+<div class="header_box">
+    <h2 class="text-center header_text">Ekstrakcja opinii</h2>
+</div>
+    {% if error is defined%}
+        <div class="alert alert-secondary" role="alert">
+            <strong></strong> {{error}}
+            <button type="button" class = "btn-close" data-bs-dismiss = "alert" aria-label="Close"></button>
+        </div>
+    {% endif %}
+
+    <form action="{{url_for('extract')}}" method = "post" class="form">
+
+        <div class="form-div">
+            <div class="no-btn">
+                <div class="product_id">
+                    <label for="product_id" class = "label_kod">Podaj kod produktu: </label>
+                </div>
+
+                <div class="product_id-input">
+                    <input type="text" name = "product_id" class = "form-input">
+                </div>
+
+                <div class="kod-help">
+                    <p class="help-kod-span">Kod produktu składa się z 8-10 cyfr</p>
+                </div>
+            </div>
+
+            <div class="button-div">
+                <button class="submit" type ="submit">Pobierz opinie</button>
+            </div>
+        </div>
+    </form>
+    <!-- <form action="{{url_for('extract')}}" method ="post" class = "form">
+        <div class="product_id row g-3 align-items-center" >
+            <div class="col-auto">
+                <label for="product_id" class = "col-form-label"> <span>Kod produktu</span> </label>
+            </div>
+            <div class="col-auto">
+                <input type="text" name="product_id" id="product_id" class="form-control">
+            </div>
+            <div class="col-auto">
+                <span id="idHelpInLine" class="form-text">Kod produktu składa się z 8-10 cyfr</span>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-danger">Pobierz opinie</button>
+            </div>
+        </div>
+    </form>
+    <label for="product_id"></label> -->
+{% endblock %}

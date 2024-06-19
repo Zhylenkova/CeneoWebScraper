@@ -1,0 +1,26 @@
+{
+    "product_id": "96297003",
+    "product_name": "Armani My Way Woda Perfumowana 30Ml",
+    "opinions_count": 500,
+    "pros_count": 287,
+    "cons_count": 36,
+    "average_stars": 4.785,
+    "stars_distribution": {
+        "0.0": 0,
+        "0.5": 5,
+        "1.0": 6,
+        "1.5": 1,
+        "2.0": 1,
+        "2.5": 0,
+        "3.0": 2,
+        "3.5": 2,
+        "4.0": 22,
+        "4.5": 51,
+        "5.0": 410
+    },
+    "recommendations_distribution": {
+        "Polecam": 483,
+        "Brak rekomendacji": 4,
+        "Nie polecam": 13
+    }
+}
